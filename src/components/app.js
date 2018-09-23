@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 
-import JobList from '../containers/job-list'
-import JobDetail from '../containers/job-detail'
+import Navbar from './NavBar'
+import JobList from '../containers/JobList'
+import JobDetail from '../containers/JobDetail'
+
+import './stylus/main.styl'
 
 export default class App extends Component {
   render() {
     return (
       <div>
+        <Navbar />
         <JobList />
         <JobDetail />
       </div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { selectJob, getJobs } from '../actions/index'
+import { selectJob, getJobs } from '../../actions'
 
 class JobList extends Component {
   componentDidMount () {
@@ -25,9 +25,12 @@ class JobList extends Component {
     }
 
     return (
-      <ul className='list-group col-sm-4'>
-        {this.renderList()}
-      </ul>
+      <section className='job-list'>
+        <h1>Vagas em aberto:</h1>
+        <ul className='list-group'>
+          {this.renderList()}
+        </ul>
+      </section>
     )
   }
 }

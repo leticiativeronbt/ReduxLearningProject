@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { activeJob } from '../actions/index'
+import { activeJob } from '../../actions'
 
 class JobDetail extends Component {
   render () {
