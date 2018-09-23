@@ -1,0 +1,44 @@
+{
+  // docs: https:simenb.github.io/stylint/
+  "blocks": false,
+  "brackets": false,
+  "colons": "always",
+  "colors": {
+    "expect": "always"
+  },
+  "commaSpace": "always",
+  "commentSpace": "always",
+  "cssLiteral": "never",
+  "depthLimit": 4,
+  "duplicates": true,
+  "efficient": "always",
+  "exclude": [],
+  "extendPref": false,
+  "globalDupe": false,
+  "groupOutputByFile": true,
+  "indentPref": 2,
+  "leadingZero": "always",
+  "maxErrors": false,
+  "maxWarnings": false,
+  "mixed": true,
+  "namingConvention": "BEM",
+  "namingConventionStrict": true,
+  "none": "always",
+  "noImportant": true,
+  "placeholders": "always",
+  "prefixVarsWithDollar": "always",
+  "quotePref": "single",
+  "reporterOptions": {
+    "columns": ["lineData", "severity", "description", "rule"],
+    "columnSplitter": "  ",
+    "showHeaders": false,
+    "truncate": true
+  },
+  "semicolons": "never",
+  "stackedProperties": "never",
+  "trailingWhitespace": "never",
+  "universal": "never",
+  "valid": true,
+  "zeroUnits": "never",
+  "zIndexNormalize": false
+}

@@ -1,0 +1,64 @@
+{
+  "extends": [
+    "airbnb",
+    "standard",
+    "standard-react",
+    "plugin:jest/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [ "jest", "json" ],
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.0"
+    }
+  },
+  "globals": {
+    "fetch": true,
+    "localStorage": true,
+    "page": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "eqeqeq": "error",
+    "max-statements": [ "error", { "max": 15 } ],
+    "indent": ["error", 2],
+    "id-length": "off",
+    "eslint no-undef": "off",
+    "new-cap": [2, {"capIsNew": false, "newIsCap": true}],
+    "no-nested-ternary": "off",
+    "no-param-reassign": "off",
+    "no-shadow": "off",
+    "no-confusing-arrow": "off",
+    "no-console": "off",
+    "no-underscore-dangle": "off",
+    "no-restricted-syntax": "off",
+    "class-methods-use-this": "off",
+    "arrow-parens": "off",
+    "jsx-a11y/html-has-lang": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/no-autofocus": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "warn",
+    "react/no-unused-state": "off",
+    "react/forbid-prop-types": "off",
+    "react/no-unused-prop-types": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-indent": [2],
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-indent-props": [2],
+    "react/prop-types": "off",
+    "react/destructuring-assignment": "off"
+  }
+}

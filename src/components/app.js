@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import JobList from '../containers/job-list';
-import JobDetail from '../containers/job-detail';
+import JobList from '../containers/job-list'
+import JobDetail from '../containers/job-detail'
 
 export default class App extends Component {
   render() {
@@ -10,6 +10,6 @@ export default class App extends Component {
         <JobList />
         <JobDetail />
       </div>
-    );
+    )
   }
 }

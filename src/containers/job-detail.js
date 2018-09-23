@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { activeJob } from '../actions/index'
 import { bindActionCreators } from 'redux'
+import { activeJob } from '../actions/index'
 
-class JobDetail extends Component{
-  render(){
-    if(!this.props.job){
+class JobDetail extends Component {
+  render () {
+    if (!this.props.job) {
       return <div>Select a Job to get started.</div>
     }
 
-    return(
+    return (
       <div>
         <h3>Job details</h3>
         <div>Title: {this.props.job.title}</div>
@@ -19,14 +19,14 @@ class JobDetail extends Component{
   }
 }
 
-function mapStateToProps(state){
+function mapStateToProps (state) {
   return {
     job: state.activeJob
   }
 }
 
-function mapDispatchToProps(dispatch){
-  return bindActionCreators({ activeJob: activeJob }, dispatch)
+function mapDispatchToProps (dispatch) {
+  return bindActionCreators({ activeJob }, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(JobDetail)
